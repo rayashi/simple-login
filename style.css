@@ -1,0 +1,111 @@
+:root {
+  --light-bg: #eaeefd;
+  --dark-bg: #493c65;
+  --dark-form-bg: #210856;
+  --primary-text-dark: #fbf9ff;
+  --text-dark: #b8bcd2;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-bg);
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px;
+}
+
+.illustration {
+  flex: 2;
+}
+
+.illustration img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.form-header a {
+  color: var(--primary-text-dark);
+  font-weight: bold;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 20px;
+  background-color: var(--dark-form-bg);
+  color: var(--text-dark);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.form-buttons button {
+  margin: 0 5px;
+}
+
+.form-buttons button:first-child {
+  flex: 1;
+}
+
+.form-buttons button span {
+  font-size: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border-top: solid 1px var(--dark-bg);
+  border-bottom: solid 1px var(--dark-bg);
+  padding: 20px 0;
+}
+
+h3 {
+  font-weight: bold;
+  color: var(--primary-text-dark);
+  margin: 0;
+}
+
+p {
+  font-size: small;
+}
+
+input {
+  color: var(--text-dark);
+  margin: 10px 0;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--dark-bg);
+}
+
+button {
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  background-image: linear-gradient(to right, #ff4f61, #ff715b);
+  color: var(--primary-text-dark);
+}
