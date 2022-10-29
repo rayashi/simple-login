@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <title>Beto Coder Login</title>
@@ -13,14 +13,23 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
 
-  <body>
+  <body class="themed">
     <div class="main">
-      <div class="illustration"></div>
+      <div id="illustration"></div>
       <div class="form-container">
+        <div class="theme-selector">
+          <input
+            type="checkbox"
+            id="switch"
+            onchange="onThemeChange()"
+            value="dark"
+          />
+          <label for="switch">Toggle</label>
+        </div>
         <div class="form-header">
           <h3>Entre nessa viagem</h3>
           <p>Não tem uma conta? <a>Cadastre-se</a></p>
